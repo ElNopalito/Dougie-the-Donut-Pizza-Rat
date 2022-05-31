@@ -5,8 +5,10 @@ var policeData;
 
 var mainContainer;
 const btn = document.getElementById("boroughBtn");
+const play = document.getElementById('play')
 
-btn.addEventListener("mouseover", (event) => {
+
+btn.addEventListener("click", (event) => {
   // console.log(button has been hovered over);
   console.log(event)
   event.preventDefault();
@@ -54,22 +56,4 @@ console.log(boroughs);
     })
     .catch((err) => console.log(err));
 });
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
